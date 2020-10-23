@@ -22,7 +22,7 @@
 
 # Qt version to build
 VERSION_MAJOR=5
-VERSION_MINOR=14
+VERSION_MINOR=15
 VERSION_PATCH=1
 
 # Set if needed for a beta or RC version, e.g. "-beta4"
@@ -131,10 +131,10 @@ DIR=${BUILD_DIR}/`basename ${SOURCE} .tar.xz`
 # Name of created build archive file
 if [ ${BUILD_TYPE} = "full" ]
 then
-    BUILD="Qt${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}-RaspberryPi3-bin-full.tgz"
+    BUILD="Qt${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}-rpi-bin-full.tgz"
 elif [ ${BUILD_TYPE} = "minimal" ]
 then
-    BUILD="Qt${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}-RaspberryPi3-bin-minimal.tgz"
+    BUILD="Qt${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}-rpi-bin-minimal.tgz"
 else
     echo "Unknown build type: ${BUILD_TYPE}"
     exit 1
