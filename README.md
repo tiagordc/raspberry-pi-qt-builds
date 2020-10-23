@@ -1,14 +1,6 @@
 # rpi-build-qt-pyqt
 
-Build Qt 5 and PyQt5 on the Raspberry Pi platform
-
-# Overview
-
-This project contains scripts for building Qt natively on the Raspberry Pi platform. It includes the Qt libraries and tools (e.g. qmake) for developing Qt-based applications on the Raspberry Pi. Also included are binaries (in the form of tar archives) for various versions of Qt that will run under the Raspbian Linux distribution. As building Qt natively is very time consuming, these are provided for the convenience of developers who want to use a recent version of Qt on the Raspberry Pi platform running Raspbian.
-
-Note that if you want to do significant Qt development for the Raspberry Pi, it is generally recommended to set up a cross-compiled development environment running on a faster desktop computer. While more complex to initially set up, this will usually pay off in reduced build times.
-
-Also note that Raspbian Linux includes packages for Qt 5.7.1. If this version is new enough for you, you may want to use the official Raspbian/Debian Qt packages rather that the ones provided here.
+Build Qt5 and PyQt5 on a Raspberry Pi
 
 # Building
 
@@ -96,36 +88,7 @@ You can then run qmake specifying the full path, e.g. /usr/local/Qt-5.10.1/bin/q
 
 Qt Creator can be run as "qtcreator" (it gets installed in /usr/local/bin/qtcreator).
 
-# Known Issues and Limitations
-
-The binaries have only had minimal testing. Both the xcb and eglfs rendering back ends should work and there is support for both widgets and QML.
-
-The binaries support Raspbian Linux and the Raspberry Pi 3 only.
-
-The QtWebengine and QtLocation modules are not included as they require more memory to build than is available on a Raspberry Pi 3 (you might be able to compile them if you add swap space).
-
-Qt 5.11.0 and later requires a newer version of libclang to build the documentation than is currently available in Raspbian. The Qt documentation is currently not available in these builds.
-
-The Qt Creator binary is built against a specific version of Qt. That version needs to be installed in order to run it. You can install multiple versions of Qt if desired, provided that you have enough disk space.
-
-The software was built on a Raspian system based on the "stretch" release. It won't run on the older "jessie" release.
-
-It is not using hardware (GPU) OpenGL, so OpenGL performance will be poor.
-
-# Future Plans
-
-The following are some features that are being considered for the future:
-
-- Add QtWebEngine and QtLocation modules
-- Offer Debian format packages
-- Provide cross-compilation packages
-- Add builds for other Raspberry Pi models
-
 # References
 
 1. https://wiki.qt.io/Native_Build_of_Qt5_on_a_Raspberry_Pi
 2. https://wiki.qt.io/Native_Build_of_Qt_5.4.1_on_a_Raspberry_Pi
-
-# Legal Disclaimer
-
-This software is provided "as is" and any expressed or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. in no event shall ICS or its contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.
