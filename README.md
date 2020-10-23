@@ -1,6 +1,6 @@
-# raspberry-pi-qt-builds
+# rpi-build-qt-pyqt
 
-Qt builds for the Raspberry Pi platform
+Build Qt 5 and PyQt5 on the Raspberry Pi platform
 
 # Overview
 
