@@ -10,34 +10,6 @@ Note that if you want to do significant Qt development for the Raspberry Pi, it 
 
 Also note that Raspbian Linux includes packages for Qt 5.7.1. If this version is new enough for you, you may want to use the official Raspbian/Debian Qt packages rather that the ones provided here.
 
-# Features
-
-These builds support the latest Qt "recommended" and "long term support" releases. The downloads include both a "full" version as well as a "minimal" version which does not include the Qt documentation or example applications. The builds are provided in the form of tar archives which can be extracted on a Raspberry Pi system running Raspbian. The table below lists the current binary builds.
-
-| Qt Version | Platform       | Type   | Options | Size   | Comments            |
-| ---------- | -------------- | -------| ------- | ------ | ------------------- |
-| 5.9.7      | Raspberry Pi 3 | Native | Full    | 586MB  |                     |
-| 5.9.7      | Raspberry Pi 3 | Native | Minimal |  51MB  | No examples or docs |
-| 5.11.3     | Raspberry Pi 3 | Native | Full    | 422MB  |                     |
-| 5.11.3     | Raspberry Pi 3 | Native | Minimal |  61MB  | No examples or docs |
-| 5.12.0     | Raspberry Pi 3 | Native | Full    | 419MB  |                     |
-| 5.12.0     | Raspberry Pi 3 | Native | Minimal |  58MB  | No examples or docs |
-| 5.12.4     | Raspberry Pi 3 | Native | Full    | 419MB  |                     |
-| 5.12.4     | Raspberry Pi 3 | Native | Minimal |  58MB  | No examples or docs |
-| 5.13.0     | Raspberry Pi 3 | Native | Full    | 504MB  |                     |
-| 5.13.0     | Raspberry Pi 3 | Native | Minimal |  58MB  | No examples or docs |
-| 5.14.1     | Raspberry Pi 3 | Native | Minimal |  71MB  | No examples or docs |
-
-
-| Qt Creator Version | Platform       | Type   | Options | Size   | Comments                |
-| ------------------ | -------------- | -------| ------- | ------ | ----------------------- |
-| 4.6.2              | Raspberry Pi 3 | Native | Full    |  41MB  | Built against Qt 5.9.6  |
-| 4.6.2              | Raspberry Pi 3 | Native | Full    |  41MB  | Built against Qt 5.11.1 |
-| 4.7.2              | Raspberry Pi 3 | Native | Full    |  25MB  | Built against Qt 5.11.2 |
-| 4.8.0              | Raspberry Pi 3 | Native | Full    |  25MB  | Built against Qt 5.12.0 |
-
-The builds include most Qt modules (see below under "Known Issues and Limitations"). The following rendering back ends are included: eglfs, linuxfb, minimal, minimalegl, offscreen, vnc, wayland-egl, wayland, wayland-xcomposite-egl, wayland-xcomposite-glx, webgl, xcb.
-
 # Building
 
 If you want to build these images yourself, you can run the provided script (qtbuild.sh) on a Raspberry Pi system. It is recommended that you configure the system (using raspi-config) to boot into a text console and not run the graphical desktop. I have had issues with the Raspberry Pi rebooting during the build. If so, you can manually restart it.
