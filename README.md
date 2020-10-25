@@ -93,3 +93,4 @@ Qt Creator can be run as "qtcreator" (it gets installed in /usr/local/bin/qtcrea
 1. https://wiki.qt.io/Native_Build_of_Qt5_on_a_Raspberry_Pi
 2. https://wiki.qt.io/Native_Build_of_Qt_5.4.1_on_a_Raspberry_Pi
 3. https://wiki.qt.io/Building_Qt_5_from_Git
+4. https://doc.bccnsoft.com/docs/PyQt5/installation.html
