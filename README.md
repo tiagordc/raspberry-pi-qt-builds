@@ -86,7 +86,10 @@ Tested with Qt5.15.1 and PyQt5-5.15.2 on a Raspberry Pi 4 Model B 4GB
     * cd ~/qtbuild
     * tar czf PyQt5-rpi.tgz /usr/lib/python3/dist-packages/PyQt5
 
-11. Check installation
+11. Test
+
+    * sudo wget https://raw.githubusercontent.com/tiagordc/rpi-build-qt-pyqt/master/test.py
+    * python3 test.py
     
 # Install
 
