@@ -1,6 +1,6 @@
 # rpi-build-qt-pyqt
 
-Build Qt5 and PyQt5 on a Raspberry Pi
+Build the latest Qt5 and PyQt5 on a Raspberry Pi
 
 Tested with Qt5.15.1 and PyQt5-5.15.2 on a Raspberry Pi 4 Model B 4GB
 
