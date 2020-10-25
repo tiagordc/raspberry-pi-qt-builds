@@ -1,3 +1,3 @@
 from PyQt5 import Qt, QtCore
-Qt.PYQT_VERSION_STR
-QtCore.QT_VERSION_STR
+print(Qt.PYQT_VERSION_STR)
+print(QtCore.QT_VERSION_STR)
