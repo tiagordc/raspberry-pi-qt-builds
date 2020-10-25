@@ -93,6 +93,8 @@ Tested with Qt5.15.1 and PyQt5-5.15.2 on a Raspberry Pi 4 Model B 4GB
     
       ![test](images/test.png)
       
+12. Backup ~/qtbuild folder
+
 # Install
 
 # References
