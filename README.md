@@ -4,6 +4,8 @@ Build the latest Qt5 and PyQt5 on a Raspberry Pi
 
 Tested with Qt5.15.1 and PyQt5-5.15.2 on a Raspberry Pi 4 Model B 4GB
 
+Do at your own risk and make sure you know what you're doing because I don't.
+
 # Build
 
 1. Uncomment source line in sources-list
