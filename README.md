@@ -91,6 +91,8 @@ Tested with Qt5.15.1 and PyQt5-5.15.2 on a Raspberry Pi 4 Model B 4GB
     * sudo wget https://raw.githubusercontent.com/tiagordc/rpi-build-qt-pyqt/master/test.py
     * python3 test.py
     
+      ![test](images/test.png)
+      
 # Install
 
 # References
