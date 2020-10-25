@@ -59,6 +59,8 @@ Tested with Qt5.15.1 and PyQt5-5.15.2 on a Raspberry Pi 4 Model B 4GB
     * nano ~/.bashrc
         * export LD_LIBRARY_PATH=/usr/local/**Qt-5.15.1**/lib:$LD_LIBRARY_PATH
         * export PATH=/usr/local/**Qt-5.15.1**/bin:$PATH
+      
+    	![path](images/path.png)
 	
 9. Build PyQt5
 
