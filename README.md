@@ -29,8 +29,8 @@ Do at your own risk and make sure you know what you're doing because I don't.
 	  * sudo apt-get build-dep qt5-default
 	  * sudo apt-get install build-essential perl python git
 	  * sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev
-	  * sudo apt-get install flex bison gperf libicu-dev libxslt-dev ruby
-	  * sudo apt-get install libxcursor-dev libxcomposite-dev libxdamage-dev libxrandr-dev libxtst-dev libxss-dev libdbus-1-dev libevent-dev libfontconfig1-dev libcap-dev libpulse-dev libudev-dev libpci-dev libnss3-dev libasound2-dev libegl1-mesa-dev gperf bison nodejs
+	  * sudo apt-get install flex bison gperf libicu-dev libxslt-dev ruby nodejs
+	  * sudo apt-get install libxcursor-dev libxcomposite-dev libxdamage-dev libxrandr-dev libxtst-dev libxss-dev libdbus-1-dev libevent-dev libfontconfig1-dev libcap-dev libpulse-dev libudev-dev libpci-dev libnss3-dev libasound2-dev libegl1-mesa-dev
 	  * sudo apt-get install libasound2-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev
 	  * sudo apt install libclang-6.0-dev llvm-6.0
   
