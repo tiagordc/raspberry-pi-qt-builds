@@ -62,7 +62,18 @@ Do at your own risk and make sure you know what you're doing because I don't.
         * export PATH=/usr/local/**Qt-5.15.2**/bin:$PATH
       
     	![path](images/path.png)
-	
+
+9. Build PyQt5
+
+    * sudo apt-get install freeglut3-dev 
+    * sudo pip3 install sip==5.5.0 pyqt5-sip
+    * cd /usr/src
+    * sudo tar xzf PyQt5-5.15.2.tar.gz
+    * cd PyQt5-5.15.2
+    * sudo python3 configure.py --qmake /usr/local/Qt-5.15.2/bin/qmake --confirm-license --sip-module PyQt5.sip
+    * sudo make -j4
+    * sudo make install
+
 9. Build PyQt5 - IGNORE
 
     * sudo apt-get install sip-dev
