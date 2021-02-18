@@ -27,7 +27,6 @@ Do at your own risk and make sure you know what you're doing because I don't.
 3. Install [dependencies](https://wiki.qt.io/Building_Qt_5_from_Git)
 
 	  * sudo apt-get build-dep qt5-default
-	  * sudo apt-get install build-essential perl python git
 	  * sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev
 	  * sudo apt-get install flex bison gperf libicu-dev libxslt-dev ruby nodejs
 	  * sudo apt-get install libxcursor-dev libxcomposite-dev libxdamage-dev libxrandr-dev libxtst-dev libxss-dev libdbus-1-dev libevent-dev libfontconfig1-dev libcap-dev libpulse-dev libudev-dev libpci-dev libnss3-dev libasound2-dev libegl1-mesa-dev
