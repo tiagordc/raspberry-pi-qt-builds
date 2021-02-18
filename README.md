@@ -24,7 +24,7 @@ Could only make it work with sip 4.19, recent versions break the compatibility w
     * sudo apt full-upgrade
     * sudo reboot now
     
-3. Install [dependencies](https://wiki.qt.io/Building_Qt_5_from_Git)
+3. Install [dependencies](https://wiki.qt.io/Building_Qt_5_from_Git) - not sure if all these are really required
 
 	  * sudo apt-get build-dep qt5-default
 	  * sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev
@@ -34,7 +34,7 @@ Could only make it work with sip 4.19, recent versions break the compatibility w
 	  * sudo apt-get install freeglut3-dev
 	  * sudo apt install libclang-6.0-dev llvm-6.0
   
-4. Download the Qt build script and check for the right version
+4. Run the Qt build script
 
     * wget https://raw.githubusercontent.com/tiagordc/raspberry-pi-qt-builds/master/build-qt.sh
     * sudo chmod +x build-qt.sh
@@ -75,6 +75,7 @@ Could only make it work with sip 4.19, recent versions break the compatibility w
 8. Test
 
     * cd
+    * sip -V
     * sudo wget https://raw.githubusercontent.com/tiagordc/rpi-build-qt-pyqt/master/test.py
     * python3 test.py
 
