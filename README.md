@@ -1,10 +1,12 @@
 # rpi-build-qt-pyqt
 
-Build the latest Qt5 and PyQt5 on a Raspberry Pi
+Build the latest Qt5 and PyQt5 on a Raspberry Pi (no cross compiling)
 
 Tested with Qt5.15.2 and PyQt5-5.15.2 on a Raspberry Pi 4 Model B 4GB
 
-Do at your own risk and make sure you know what you're doing because I don't.
+Also tested to work with PyInstaller and PyArmor to create standalone packages
+
+Could only make it work with sip 4.19, recent versions break the compatibility with PyInstaller
 
 # Build
 
@@ -72,6 +74,7 @@ Do at your own risk and make sure you know what you're doing because I don't.
 
 8. Test
 
+    * cd
     * sudo wget https://raw.githubusercontent.com/tiagordc/rpi-build-qt-pyqt/master/test.py
     * python3 test.py
 
