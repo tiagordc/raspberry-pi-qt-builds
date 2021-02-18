@@ -68,12 +68,20 @@ Do at your own risk and make sure you know what you're doing because I don't.
 
     * sudo pip3 install sip==5.5.0 pyqt5-sip
     * cd /usr/src
+    * sudo wget https://files.pythonhosted.org/packages/28/6c/640e3f5c734c296a7193079a86842a789edb7988dca39eab44579088a1d1/PyQt5-5.15.2.tar.gz
     * sudo tar xzf PyQt5-5.15.2.tar.gz
     * cd PyQt5-5.15.2
     * sudo python3 configure.py --qmake /usr/local/Qt-5.15.2/bin/qmake --confirm-license
     * sudo make -j4
     * sudo make install
 
+10. Test
+
+    * sudo wget https://raw.githubusercontent.com/tiagordc/rpi-build-qt-pyqt/master/test.py
+    * python3 test.py
+    
+      ![test](images/test.png)
+      
 9. Build PyQt5 - IGNORE
 
     * sudo apt-get install sip-dev
@@ -98,12 +106,7 @@ Do at your own risk and make sure you know what you're doing because I don't.
     * cd ~/qtbuild
     * tar czf PyQt5-rpi.tgz /usr/lib/python3/dist-packages/PyQt5
 
-11. Test
 
-    * sudo wget https://raw.githubusercontent.com/tiagordc/rpi-build-qt-pyqt/master/test.py
-    * python3 test.py
-    
-      ![test](images/test.png)
       
 12. Backup ~/qtbuild folder
 
