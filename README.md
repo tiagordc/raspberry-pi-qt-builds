@@ -70,7 +70,7 @@ Do at your own risk and make sure you know what you're doing because I don't.
     * cd /usr/src
     * sudo tar xzf PyQt5-5.15.2.tar.gz
     * cd PyQt5-5.15.2
-    * sudo python3 configure.py --qmake /usr/local/Qt-5.15.2/bin/qmake --confirm-license --sip-module PyQt5.sip
+    * sudo python3 configure.py --qmake /usr/local/Qt-5.15.2/bin/qmake --confirm-license
     * sudo make -j4
     * sudo make install
 
