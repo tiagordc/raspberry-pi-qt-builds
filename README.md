@@ -21,8 +21,8 @@ Do at your own risk and make sure you know what you're doing because I don't.
     * sudo apt update
     * sudo apt full-upgrade
     * sudo reboot now
-    * sudo rpi-update
-    * sudo reboot now
+    * sudo rpi-update ??
+    * sudo reboot now ??
     
 3. Install [dependencies](https://wiki.qt.io/Building_Qt_5_from_Git)
 
