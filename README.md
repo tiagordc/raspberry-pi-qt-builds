@@ -74,8 +74,6 @@ Do at your own risk and make sure you know what you're doing because I don't.
 
     * sudo wget https://raw.githubusercontent.com/tiagordc/rpi-build-qt-pyqt/master/test.py
     * python3 test.py
-    
-      ![test](images/test.png)
 
 # References
 
