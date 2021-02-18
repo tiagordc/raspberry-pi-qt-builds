@@ -2,7 +2,7 @@
 
 Build the latest Qt5 and PyQt5 on a Raspberry Pi
 
-Tested with Qt5.15.1 and PyQt5-5.15.2 on a Raspberry Pi 4 Model B 4GB
+Tested with Qt5.15.2 and PyQt5-5.15.2 on a Raspberry Pi 4 Model B 4GB
 
 Do at your own risk and make sure you know what you're doing because I don't.
 
@@ -54,17 +54,17 @@ Do at your own risk and make sure you know what you're doing because I don't.
 7. Qt is now build on /home/pi/qtbuild. Install it to proceed with PyQt
 
     * cd /
-    * sudo tar xf /home/pi/qtbuild/**Qt5.15.1-rpi-bin-minimal.tgz**
+    * sudo tar xf /home/pi/qtbuild/**Qt5.15.2-rpi-bin-minimal.tgz**
 
 8. Add Qt to PATH
 
     * nano ~/.bashrc
-        * export LD_LIBRARY_PATH=/usr/local/**Qt-5.15.1**/lib:$LD_LIBRARY_PATH
-        * export PATH=/usr/local/**Qt-5.15.1**/bin:$PATH
+        * export LD_LIBRARY_PATH=/usr/local/**Qt-5.15.2**/lib:$LD_LIBRARY_PATH
+        * export PATH=/usr/local/**Qt-5.15.2**/bin:$PATH
       
     	![path](images/path.png)
 	
-9. Build PyQt5
+9. Build PyQt5 - IGNORE
 
     * sudo apt-get install sip-dev
     * cd /usr/src
