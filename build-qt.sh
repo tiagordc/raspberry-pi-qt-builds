@@ -34,7 +34,7 @@ VERSION_SUFFIX=
 BUILD_TYPE="minimal"
 
 # Number of parallel jobs to run
-PAR=1
+PAR=4
 
 # Stop on error
 set -e
