@@ -21,8 +21,6 @@ Do at your own risk and make sure you know what you're doing because I don't.
     * sudo apt update
     * sudo apt full-upgrade
     * sudo reboot now
-    * sudo rpi-update ??
-    * sudo reboot now ??
     
 3. Install [dependencies](https://wiki.qt.io/Building_Qt_5_from_Git)
 
@@ -38,25 +36,14 @@ Do at your own risk and make sure you know what you're doing because I don't.
 
     * wget https://raw.githubusercontent.com/tiagordc/raspberry-pi-qt-builds/master/build-qt.sh
     * sudo chmod +x build-qt.sh
-
-5. Make sure the Pi boot into CLI and not desktop
-
-    * sudo raspi-config
-    
-    	![boot](images/boot1.png)
-    	![boot](images/boot2.png)
-    	![boot](images/boot3.png)
-
-6. Reboot and build Qt. This will take several hours.
-
     * sh build-qt.sh
 
-7. Qt is now build on /home/pi/qtbuild. Install it to proceed with PyQt
+5. Qt is now build on /home/pi/qtbuild. Install it to proceed with PyQt
 
     * cd /
     * sudo tar xf /home/pi/qtbuild/**Qt5.15.2-rpi-bin-minimal.tgz**
 
-8. Add Qt to PATH
+6. Add Qt to PATH
 
     * nano ~/.bashrc
         * export LD_LIBRARY_PATH=/usr/local/**Qt-5.15.2**/lib:$LD_LIBRARY_PATH
@@ -64,53 +51,31 @@ Do at your own risk and make sure you know what you're doing because I don't.
       
     	![path](images/path.png)
 
-9. Build PyQt5
+7. Build PyQt5
 
-    * sudo pip3 install sip==5.5.0 pyqt5-sip
+    * sudo apt-get install sip-dev
     * cd /usr/src
+    * sudo wget https://www.riverbankcomputing.com/static/Downloads/sip/4.19.24/sip-4.19.24.tar.gz
     * sudo wget https://files.pythonhosted.org/packages/28/6c/640e3f5c734c296a7193079a86842a789edb7988dca39eab44579088a1d1/PyQt5-5.15.2.tar.gz
+    * sudo tar xzf sip-4.19.24.tar.gz
     * sudo tar xzf PyQt5-5.15.2.tar.gz
-    * cd PyQt5-5.15.2
+
+    * cd sip-4.19.24
+    * sudo python3 configure.py --sip-module PyQt5.sip
+    * sudo make -j4
+    * sudo make install
+
+    * cd ../PyQt5-5.15.2
     * sudo python3 configure.py --qmake /usr/local/Qt-5.15.2/bin/qmake --confirm-license
     * sudo make -j4
     * sudo make install
 
-10. Test
+8. Test
 
     * sudo wget https://raw.githubusercontent.com/tiagordc/rpi-build-qt-pyqt/master/test.py
     * python3 test.py
     
       ![test](images/test.png)
-      
-9. Build PyQt5 - IGNORE
-
-    * sudo apt-get install sip-dev
-    * cd /usr/src
-    * sudo wget https://www.riverbankcomputing.com/static/Downloads/sip/4.19.24/sip-4.19.24.tar.gz
-    * sudo wget https://www.riverbankcomputing.com/static/Downloads/PyQt5/PyQt5-5.15.2.dev2010041344.tar.gz
-    * sudo tar xzf sip-4.19.24.tar.gz
-    * sudo tar xzf PyQt5-5.15.2.dev2010041344.tar.gz
-    * cd sip-4.19.24
-    * sudo python3 configure.py --sip-module PyQt5.sip
-    * sudo make 
-    * sudo make install
-    * cd ../PyQt5-5.15.2.dev2010041344
-    * sudo python3 configure.py --qmake /usr/local/Qt-5.15.1/bin/qmake --confirm-license
-    * sudo make
-    * sudo make install
-    * cd /usr/src
-    * sudo rm -rf sip-4.19.24 PyQt5-5.15.2.dev2010041344 sip-4.19.24.tar.gz PyQt5-5.15.2.dev2010041344.tar.gz
-
-10. Pack PyQt
-
-    * cd ~/qtbuild
-    * tar czf PyQt5-rpi.tgz /usr/lib/python3/dist-packages/PyQt5
-
-
-      
-12. Backup ~/qtbuild folder
-
-# Install
 
 # References
 
