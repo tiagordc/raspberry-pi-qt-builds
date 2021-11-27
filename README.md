@@ -85,3 +85,4 @@ Could only make it work with sip 4.19, recent versions break the compatibility w
 2. https://wiki.qt.io/Native_Build_of_Qt_5.4.1_on_a_Raspberry_Pi
 3. https://wiki.qt.io/Building_Qt_5_from_Git
 4. https://doc.bccnsoft.com/docs/PyQt5/installation.html
+5. https://www.tal.org/tutorials/building-qt-515-raspberry-pi
